@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* White Theme Color System */
+    --background: 0 0% 100%;
+    --foreground: 220 13% 9%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 9%;
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 220 13% 9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 221 83% 53%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 221 83% 53%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-gray-900 antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  /* Accent Text */
+  .text-accent {
+    @apply text-blue-600;
+  }
+  
+  /* Section Backgrounds */
+  .section-alt {
+    @apply bg-slate-50;
+  }
+  
+  /* Card Styles */
+  .card-white {
+    @apply bg-white border border-gray-200 rounded-xl shadow-sm;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-md hover:border-gray-300;
+  }
+  
+  /* Icon Container */
+  .icon-box {
+    @apply w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center;
+  }
+  
+  .icon-box-lg {
+    @apply w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center;
+  }
+  
+  /* Section Divider */
+  .section-divider {
+    @apply w-16 h-1 bg-blue-600 rounded-full;
+  }
+  
+  /* Link Styles */
+  .link-primary {
+    @apply text-blue-600 hover:text-blue-700 transition-colors;
+  }
+  
+  /* Badge Styles */
+  .badge-blue {
+    @apply px-3 py-1 text-xs font-medium bg-blue-50 text-blue-600 rounded-full;
+  }
+  
+  .badge-gray {
+    @apply px-3 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full;
+  }
+}
