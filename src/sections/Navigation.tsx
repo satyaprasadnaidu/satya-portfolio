@@ -80,7 +80,7 @@ export function Navigation() {
               className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2 rounded-lg transition-colors"
               onClick={() => handleLinkClick("#contact")}
             >
-              Hire Me
+              Hire 
             </Button>
           </div>
 

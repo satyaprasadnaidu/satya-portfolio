@@ -27,7 +27,7 @@ export function Hero() {
 
         {/* Tagline */}
         <p className="text-base sm:text-lg text-gray-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-          I build scalable web applications and transform complex data into actionable insights. 
+          I build scalable web applications and transform complex data into actionable insights.
           Passionate about solving real-world problems through code and data.
         </p>
 
